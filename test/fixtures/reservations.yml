@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  appoint_date: 2013-05-22 22:45:17
+  party: 1
+  user_id: 1
+  user_type: MyString
+
+two:
+  appoint_date: 2013-05-22 22:45:17
+  party: 1
+  user_id: 1
+  user_type: MyString

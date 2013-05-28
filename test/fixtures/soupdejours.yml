@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sname: MyString
+  sdate: 2013-05-23
+
+two:
+  sname: MyString
+  sdate: 2013-05-23

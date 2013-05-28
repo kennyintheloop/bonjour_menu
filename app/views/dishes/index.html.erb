@@ -1,0 +1,109 @@
+
+<h1>*Today's Soup du Jour*</h1>
+<% @soup.each do |s| %>
+<h3><%= s.sname %>
+<a href="http://twitter.com/home?status=Our soup de jour dish:<%= s.sname %> at Bon Jour Restaurant today!" title="Click to send this soup de jour to Twitter!" target="_blank">Share on Twitter</a>
+</h3>
+<% end %>
+**If you don't see the Soup du Jour dish above, it's not available at this time**
+<br>
+
+<div class="row">
+  <h1>Starter Menu</h1>
+  <div class="span4">
+    <%=image_tag 'starters.jpg' %>
+  </div>
+  <div class="span8">
+
+<table>
+  <tr>
+    <th>Dish Name</th>
+    <th>Dish Type</th>
+    <th>About this dish</th>
+    <th>Price</th>
+  </tr>
+<% @starters.each do |dish| %>
+  <tr>
+    <td><%= dish.name %></td>
+    <td><%= dish.dish_type %></td>
+    <td><%= dish.detail %></td>
+    <td>$<%= dish.price %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</div>
+<br>
+<div class="row">
+<h1>Dessert Menu</h1>
+<div class="span4">
+  <%=image_tag 'desserts.jpg' %>
+  </div>
+  <div class="span8">
+<table>
+  <tr>
+    <th>Dish Name</th>
+    <th>Dish Type</th>
+    <th>About this dish</th>
+    <th>Price</th>
+  </tr>
+<% @desserts.each do |dish| %>
+  <tr>
+    <td><%= dish.name %></td>
+    <td><%= dish.dish_type %></td>
+    <td><%= dish.detail %></td>
+    <td>$<%= dish.price %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</div>
+<div class="row">
+<h1>Entree Menu</h1>
+<div class="span4">
+  <%=image_tag 'entrees.jpg' %>
+  </div>
+  <div class="span8">
+<table>
+  <tr>
+    <th>Dish Name</th>
+    <th>Dish Type</th>
+    <th>About this dish</th>
+    <th>Price</th>
+  </tr>
+<% @entrees.each do |dish| %>
+  <tr>
+    <td><%= dish.name %></td>
+    <td><%= dish.dish_type %></td>
+    <td><%= dish.detail %></td>
+    <td>$<%= dish.price %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</div>
+<div class="row">
+<h1>Drink Menu</h1>
+<div class="span4">
+  <%=image_tag 'drinks.jpg' %>
+  </div>
+  <div class="span8">
+<table>
+  <tr>
+    <th>Dish Name</th>
+    <th>Dish Type</th>
+    <th>About this dish</th>
+    <th>Price</th>
+  </tr>
+<% @drinks.each do |dish| %>
+  <tr>
+    <td><%= dish.name %></td>
+    <td><%= dish.dish_type %></td>
+    <td><%= dish.detail %></td>
+    <td>$<%= dish.price %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</div>
+<br />

@@ -1,0 +1,2 @@
+module SoupdejoursHelper
+end

@@ -1,0 +1,11 @@
+-As the restaurant owner, I want to see the list of tonight's reservations.
+-As the restaurant owner, I want to see a report of loyalty cards: who they belong to, and how many points are on each card.
+<h1>Today's Reservation List </h1>
+<%@reservation_list.each do |r|%>
+<% @user = User.first(:conditions => {:id =>r.user_id})%>
+<p><b>Customer:</b> <%=@user.name%> - Party of <%=r.party %> - Reservation Date :<%=r.appoint_date %></p>
+<% end %>
+<h1>Customer List with loyalty points </h1>
+<% @customer_list.each do |l| %>
+<p><b><%=l.name %> </b>- Earned <%= l.points_earned %> points</p>
+<% end %>

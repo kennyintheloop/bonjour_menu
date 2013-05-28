@@ -1,0 +1,25 @@
+<h1>Soup de Jour List</h1>
+
+<table>
+  <tr>
+    <th>Soup Name</th>
+    <th>Soup Available Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @soupdejours.each do |soupdejour| %>
+  <tr>
+    <td><%= soupdejour.sname %></td>
+    <td><%= soupdejour.sdate %></td>
+    <td><%= link_to 'Show', soupdejour %></td>
+    <td><%= link_to 'Edit', edit_soupdejour_path(soupdejour) %></td>
+    <td><%= link_to 'Destroy', soupdejour, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Soupdejour', new_soupdejour_path %>
